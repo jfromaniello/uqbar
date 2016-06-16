@@ -17,10 +17,14 @@ function getDependenciesNames(func, ignoreLastArg) {
   }
 }
 
-function Container () {
+function Container (guywire) {
   this._registry = new Map([]);
   this._instances = new Map([]);
   this._interfaces = new Map([]);
+
+  if (guywire) {
+    guywire(this);
+  }
 }
 
 const default_register_options = {

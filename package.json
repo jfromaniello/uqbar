@@ -1,0 +1,22 @@
+{
+  "name": "uqbar",
+  "description": "simple dependency injection for nodejs",
+  "version": "0.0.0",
+  "author": "José F. Romaniello <jfromaniello@gmail.com> (http://joseoncode.com)",
+  "repository": {
+    "url": "git://github.com/jfromaniello/uqbar.git"
+  },
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "dependencies": {
+    "async": "~2.0.0-rc.6",
+    "get-parameter-names": "~0.3.0",
+    "xtend": "~4.0.1"
+  },
+  "devDependencies": {
+    "chai": "~2.3.0",
+    "mocha": "~2.2.5"
+  }
+}

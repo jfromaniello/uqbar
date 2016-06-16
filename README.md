@@ -31,7 +31,7 @@ It receives a `name` and a `factory` function with a callback. `register` is alw
 
 -  `registerSync(name, syncfactory, [options])`
 -  `registerCtor(name, ctor, [options])`
--  `registerInstance(name, ctor, [options])`
+-  `registerInstance(name, instance, [options])`
 
 
 **Resolve** creates an instance of a service and it is always async:

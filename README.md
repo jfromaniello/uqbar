@@ -19,7 +19,7 @@ const container = new Container();
 
 A container has 2 important APIs `register` and `resolve`.
 
-**Register** is the API to populate the container. A simple registration looks like this:
+**Register** is the API to wire the services in the container. A simple registration looks like this:
 
 ```javascript
 container.register('myservice', (callback) => {

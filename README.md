@@ -167,7 +167,7 @@ fs.readdirSync('./node_modules')
   })
 
 //register "db"
-container.registerSync('db', require('./lib/database'));
+container.register('db', require('./lib/database'));
 
 //register "todos"
 container.registerCtor('todos', require('./lib/todos'));

@@ -10,11 +10,14 @@ function getDependenciesNames(func, ignoreLastArg) {
     return func['@require'];
   }
 
+  var parNames;
   if (ignoreLastArg) {
-    return getParNames(func).slice(0, -1);
+    parNames = getParNames(func).slice(0, -1);
   } else {
-    return getParNames(func);
+    parNames = getParNames(func);
   }
+
+  return parNames.filter(s => s !== '');
 }
 
 function Container (guywire) {

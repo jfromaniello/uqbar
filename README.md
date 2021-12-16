@@ -102,7 +102,7 @@ container.register('pump', callback => callback(null, new Pump()));
 container.register('coffee_maker', callback => {
   container.resolve(['heater', 'pump'], (err, services) => {
     if (err) { return callback(err); }
-    callback(null, new Pump(services[0], services[1]));
+    callback(null, new CoffeeMaker(services[0], services[1]));
   })
 });
 ```
@@ -181,7 +181,7 @@ The most common example of this is a `logger` receiving an array of `streams`:
 
 ```javascript
 function logger (bunyan, loggerStream) {
-  return bunyna.create({ streams: loggerStream });
+  return bunyan.create({ streams: loggerStream });
 }
 ```
 
